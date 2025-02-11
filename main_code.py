@@ -9,12 +9,6 @@ import absl.logging
 import firebase_admin
 from firebase_admin import credentials, storage, db
 
-# Initialize Firebase with your credentials and URLs
-cred = credentials.Certificate("firebase_credentials.json")
-firebase_admin.initialize_app(cred, {
-    'storageBucket': 'eric-farming-app.firebasestorage.app',
-    'databaseURL': 'https://eric-farming-app-default-rtdb.firebaseio.com/'
-})
 
 
 bucket = storage.bucket()
